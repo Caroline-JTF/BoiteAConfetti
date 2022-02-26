@@ -5,46 +5,40 @@
 }
 
 body {
-    background: rgb(223, 203, 207);
+    background-color: #f1dfd1;
+    background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
     overflow: hidden;
 }
 
-.containerGlobal{
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.containerBtn{
+    margin: 10px;
+    border: #f1dfd1 5px solid;
+    width: 10%;
+    height: 750px;
+    background-color: #f6f0ea;
 }
 
-.btn{
-    z-index: 1;
-    font-size: 30px;
+.containerBtn button{
     width: 100px;
     height: 100px;
+    border: rgb(146, 126, 130) 2px solid;
     border-radius: 50%;
-    border:  2px solid rgb(204, 184, 188);
-    box-shadow: 0 7px 10px 0 rgb(122, 109, 112);
-    margin: 0 50px;
-    background: rgb(223, 203, 207);
+    font-size: 50px;
+    background: none;
+    margin: 70px 20px;
+    box-shadow: 0 10px 2px 0 rgb(146, 126, 130);
 }
 
-.btn:active{
-    box-shadow: none;
-    margin-top: 7px;
-}
-
-.container {
+.container{
     perspective: 1000px;
-    width: 100%;
+    position: relative;
 }
-.container div {
-    z-index: 1000;
+
+.wrapper div{
     width: 35px;
     height: 35px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    user-select: none;
 }
