@@ -1,0 +1,50 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(223, 203, 207);
+    overflow: hidden;
+}
+
+.containerGlobal{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn{
+    z-index: 1;
+    font-size: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border:  2px solid rgb(204, 184, 188);
+    box-shadow: 0 7px 10px 0 rgb(122, 109, 112);
+    margin: 0 50px;
+    background: rgb(223, 203, 207);
+}
+
+.btn:active{
+    box-shadow: none;
+    margin-top: 7px;
+}
+
+.container {
+    perspective: 1000px;
+    width: 100%;
+}
+.container div {
+    z-index: 1000;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
